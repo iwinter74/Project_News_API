@@ -14,7 +14,7 @@ const myNews = () => {
     console.log(countryChoice.value)
     console.log(keyWord.value)
     fetch(`http://newsapi.org/v2/top-headlines?country=${countryChoice.value}&q=${keyWord.value}&apiKey=e86b7e46b097496baf69899e50907ede`)
-    .then(response => response.json())
+        .then(response => response.json())
     .then((data) => {
         console.log(data)
         console.log(data.articles)
